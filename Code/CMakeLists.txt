@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( BMS )
+find_package( OpenCV REQUIRED )
+add_executable( BMS BMS.cpp )
+target_link_libraries( BMS ${OpenCV_LIBS} )
